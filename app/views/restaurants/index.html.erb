@@ -1,0 +1,20 @@
+
+ <div class="centered">
+ <h1>Restaurant Finder</h1>
+<%= form_tag restaurants_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+<h3>Nearby Restaurants</h3>
+<% @restaurants.each do |restaurant| %>
+  <p>
+    <div class="res">
+    <b><%= restaurant.name %></b></br>
+       <%= restaurant.address %>
+    </div>
+  </p>  
+<% end %>
+
+</div>
