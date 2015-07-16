@@ -9,9 +9,15 @@
     padding: 10px;
 }
 .res{
-  background-color:#b6b6b6;
+     border-style: solid;
+    border-color: red;
+  /*background-color:#b6b6b6;*/
     margin: 0px auto;
     text-align: center;
     width: 400px;
     padding: 5px;
+}
+
+#geo-input{
+  width: 500px;
 }
