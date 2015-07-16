@@ -3,7 +3,7 @@
  <h1>Restaurant Finder</h1>
 <%= form_tag restaurants_path, :method => :get do %>
   <p>
-    <%= text_field_tag :search, params[:search] %>
+    <%= text_field_tag :search, params[:search],:id => 'geo-input' %>
     <%= submit_tag "Search Near", :name => nil %>
   </p>
 <% end %>
